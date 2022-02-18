@@ -12,3 +12,75 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
+
+<body>
+    <header>
+        <h1 class="header-title">My Saving Acount</h1>
+    </header>
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <img class="img-fluid" src="./images/money.jpg" alt="">
+                </div>
+                <div class="container col-lg-6 col-sm-12">
+                    <!-- Income -->
+                    <div class="text-center">
+                        <h3>Income</h3>
+                        <h4 class="mt-4 mb-4">Income : <input id="income"
+                                class="w-50  bg-opacity-25 px-5 py-1 rounded fs-5" type="text">
+                        </h4>
+                    </div>
+                    <!-- Expenses -->
+                    <div class="text-center">
+                        <h3 class="mb-4">Expenses</h3>
+                        <h4 class="mb-4">Food : <input id="food" class="w-50  bg-opacity-25 px-5 py-1 rounded fs-5"
+                                type="text">
+                        </h4>
+                        <h4 class="mb-4">Rent : <input id="rent" class="w-50  bg-opacity-25 px-5 py-1 rounded fs-5"
+                                type="text">
+                        </h4>
+                        <h4 class="mb-4">Clothes : <input id="clothes"
+                                class="w-50  bg-opacity-25 px-5 py-1 rounded fs-5" type="text">
+                        </h4>
+                    </div>
+                    <!-- Calculate button -->
+                    <div class="text-center">
+                        <button id="calculate-button"
+                            class="bg-primary text-white bg-opacity-75 px-5 py-1 rounded">Calculate</button>
+                    </div>
+                    <!-- Total Expenses & Balance -->
+                    <div class="text-center">
+                        <h4 class="mb-4 mt-4">Total Expenses :<span id="total-expenses">0</span></h4>
+                        <h4 class="mb-4">Balance :<span id="balance">0</span></h4>
+                    </div>
+                    <!-- Save -->
+                    <div class="text-center">
+                        <h4>Save : <input id="save-input" class="w-25 bg-opacity-25 px-5 py-1 rounded fs-5"
+                                type="text"></span>
+                            % <button id="save-button"
+                                class="bg-primary text-white bg-opacity-75 px-5 py-1 rounded">Save</button> </h4>
+                    </div>
+                    <!-- Saving & Remaining Balance -->
+                    <div class="text-center mt-4">
+                        <h4 class="mb-3">Saving Amount : <span id="saving-amount">0</span></h4>
+                        <h4>Remaining Balance : <span id="remaining-balance">0</span>
+                        </h4>
+                    </div>
+                </div>
+
+            </div>
+            <section class="container text-center">
+                <h5 id="negetive-message" class="notis">Negetive numbers are not allow</h5>
+                <h5 id="empty-message" class="notis">Input can not be empty</h5>
+                <h5 id="expenses-message" class="notis">Income can not be less than total expenses</h5>
+                <h5 id="balance-message" class="notis">Balance is not less than saving amount</h5>
+            </section>
+        </section>
+    </main>
+
+    <!-- script -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
